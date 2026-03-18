@@ -22,7 +22,10 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2512.22939-blue)](https://arxiv.org/abs/2511.06721)
 
+</div>
 
+<div align="center">
+  <img src="assets/teaser.png" alt="Illustration" width="96%">
 </div>
 
 ---
