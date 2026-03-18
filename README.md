@@ -54,20 +54,20 @@ By integrating these strengths, AvatarTex achieves high-quality topology-aligned
 
 AvatarTex consists of four key components:
 
-**(a)** Dataset construction 
+**(a)** Dataset Construction 
 
-**(b)** Texture initialization 
+**(b)** Texture Initialization 
 
-**(c)** Texture correction
+**(c)** Texture Correction
 
-**(d)** Texture refinement
+**(d)** Texture Refinement
 
 
 ---
 
 ## 📝 TODO
 - \[x\] Release paper and github page.
-- \[ \] Release our textue dataset Texhub.
+- \[ \] Release the StyleGAN ckpt for Texhub.
 
 ---
 
