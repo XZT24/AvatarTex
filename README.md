@@ -13,7 +13,7 @@
     <sup>1</sup>SSE, CUHK-Shenzhen&nbsp;&nbsp;
     <sup>2</sup>Fnii, CUHK-Shenzhen&nbsp;&nbsp;
     <sup>3</sup>Independent Researcher&nbsp;&nbsp;
-    <sup>*</sup>Equal Contribution
+    <sup>*</sup>Equal Contribution (Alphabetical Order)
   </p>
 </p>
 
@@ -38,7 +38,7 @@
 ---
 
 ## 📝 TODO
-- \[x\] Release paper and project page.
+- \[x\] Release paper and github page.
 - \[ \] Release our textue dataset Texhub.
 
 ---
