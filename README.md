@@ -3,12 +3,12 @@
   <h1 align="center"><strong>AvatarTex: High-Fidelity Facial Texture Reconstruction from Single-Image Stylized Avatars</strong></h1>
   <h3 align="center">🔥 3DV 2026 🔥 </h3>
   <p align="center">
-    <a href="https://pqh22.github.io/" target="_blank">Yuda Qiu</a><sup>1*</sup>&emsp;
-    <a href="https://scholar.google.com/citations?user=_XZonAsAAAAJ&hl=en" target="_blank">Zitong Xiao</a><sup>1*</sup>&emsp;
-    <a href="https://github.com/pfxnb" target="_blank">Yiwei Zuo</a><sup>1</sup>&emsp;
-    <a href="https://shishaoshuai.com/" target="_blank">Zisheng Ye</a><sup>1</sup>&emsp;
-    <a href="https://shishaoshuai.com/" target="_blank">Weikai Chen</a><sup>3</sup>&emsp;
-    <a href="https://www.ee.cuhk.edu.hk/~hsli/" target="_blank">Xiaoguang Han</a><sup>1,2</sup>
+    <a href="https://www.semanticscholar.org/author/Yuda-Qiu/51152863" target="_blank">Yuda Qiu</a><sup>1*</sup>&emsp;
+    <a href="https://github.com/XZT24" target="_blank">Zitong Xiao</a><sup>1*</sup>&emsp;
+    <a href="https://yiweizuo.github.io/" target="_blank">Yiwei Zuo</a><sup>1</sup>&emsp;
+    <a href="https://www.linkedin.com/in/yezisheng/" target="_blank">Zisheng Ye</a><sup>1</sup>&emsp;
+    <a href="https://scholar.google.com/citations?user=Ec6QLl0AAAAJ&hl=en" target="_blank">Weikai Chen</a><sup>3</sup>&emsp;
+    <a href="https://dblp.org/pid/60/8294" target="_blank">Xiaoguang Han</a><sup>1,2</sup>
     <br>
     <sup>1</sup>SSE, CUHK-Shenzhen&nbsp;&nbsp;
     <sup>2</sup>Fnii, CUHK-Shenzhen&nbsp;&nbsp;
