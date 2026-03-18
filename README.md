@@ -37,6 +37,34 @@
 
 ---
 
+## ⭐ Overview
+**AvatarTex** is a high-fidelity facial texture reconstruction framework capable of generating both stylized and photorealistic textures from a single image.
+Our key insight is that:
+1) While **diffusion** models excel at generating diversified textures, they lack explicit UV constraints,
+2) Whereas **GANs** provide a well-structured latent space that ensures style and topology consistency.
+   
+By integrating these strengths, AvatarTex achieves high-quality topology-aligned texture synthesis with both artistic and geometric coherence.
+
+---
+
+## 📖 Framework
+<div align="center">
+  <img src="assets/framework.png" alt="Framework" width="96%">
+</div>
+
+AvatarTex consists of four key components:
+
+**(a)** Dataset construction 
+
+**(b)** Texture initialization 
+
+**(c)** Texture correction
+
+**(d)** Texture refinement
+
+
+---
+
 ## 📝 TODO
 - \[x\] Release paper and github page.
 - \[ \] Release our textue dataset Texhub.
