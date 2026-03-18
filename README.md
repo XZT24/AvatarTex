@@ -33,7 +33,7 @@
 ## 🔥 News
 - **[2025-11]** Our paper was accept by 3DV2026 ! 🥳 
 - **[2025-11]** We release the [paper](https://arxiv.org/abs/2511.06721) for **AvatarTex**.
-- **[TBD]** Dataset Texhub will be released. Stay tuned.
+- **[TBD]** Dataset ckpt Texhub will be released. Stay tuned.
 
 ---
 
