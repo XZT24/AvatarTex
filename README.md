@@ -88,7 +88,7 @@ Thanks for waiting! We have released Texhub, please download from the following 
 Due to copyright and security concerns associated with directly releasing the TexHub texture dataset, we instead release the trained StyleGAN checkpoint. This checkpoint is trained on a  collection of multi-style texture data curated and created by us. Compared with models trained solely on real texture datasets, it demonstrates significantly stronger expressive capability. Moreover, it can be readily integrated into existing advanced face reconstruction frameworks. We will provide an example in future updates to demonstrate how to use it in practice.
 
 ## Environment Setup
-Please configure the base environment according to the environment.yml file, as it provides the required dependencies for using the TexHub checkpoint. In addition, to implement face reconstruction frameworks, <a href="https://github.com/NVlabs/nvdiffrast/tree/main" target="_blank">nvdiffrast</a> is often essential. Please follow the instructions provided in the linked repository for installation and setup.
+Please configure the base environment according to the <a href="https://github.com/XZT24/AvatarTex/blob/main/environment.yml" target="_blank">environment.yml</a>, as it provides the required dependencies for using the TexHub checkpoint. In addition, to implement face reconstruction frameworks, <a href="https://github.com/NVlabs/nvdiffrast/tree/main" target="_blank">nvdiffrast</a> is often essential. Please follow the instructions provided in the linked repository for installation and setup.
 
 ---
 
