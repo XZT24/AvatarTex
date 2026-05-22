@@ -33,7 +33,7 @@
 ## 🔥 News
 - **[2025-11]** Our paper was accept by 3DV2026 ! 🥳 
 - **[2025-11]** We release the [paper](https://arxiv.org/abs/2511.06721) for **AvatarTex**.
-- **[TBD]** Dataset ckpt Texhub will be released. Stay tuned.
+- **[2026-05]** Texhub is released!
 
 ---
 
@@ -67,12 +67,13 @@ AvatarTex consists of four key components:
 
 ## 📝 TODO
 - \[x\] Release paper and github page.
-- \[ \] Release the StyleGAN ckpt for Texhub.
+- \[x\] Release the StyleGAN ckpt for Texhub.
 
 ---
 
 ## 📚 Getting Started
-Coming soon...
+Thanks for waiting! We have released Texhub, please download from the following link: 
+<a href="https://drive.google.com/file/d/1F9rtvIYg7ZgTrASFyloTjGBHf9qTKSJU/view?usp=drive_link" target="_blank">Texhub</a>. More instructions is coming soon.
 
 ---
 
