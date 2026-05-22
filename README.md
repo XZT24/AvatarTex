@@ -52,19 +52,25 @@ By integrating these strengths, AvatarTex achieves high-quality topology-aligned
   <img src="assets/framework.png" alt="Framework" width="96%">
 </div>
 
-AvatarTex consists of four key components:
+AvatarTex is a Diffusion-to-GAN-to-Diffusion framework that consists of four key components:
 
-**(a)** Dataset Construction: We introduce TexHub, a multi-style facial texture dataset built upon the HiFi3D++ topology. The dataset consists of artist-created base texture assets together with diffusion-model-generated augmented data. TexHub provides strong data support for multi-style face reconstruction tasks. Some visualization results from TexHub are shown below:
+**(a) Dataset Construction:** We introduce TexHub, a multi-style facial texture dataset built upon the <a href="https://github.com/czh-98/REALY/tree/master/HIFI3D%2B%2B" target="_blank">Hifi3D++</a> topology. The dataset consists of artist-created base texture assets together with diffusion-model-generated augmented data. TexHub provides strong data support for multi-style face reconstruction tasks. Some visualization results from TexHub are shown below:
 </div>
 <div align="center">
   <img src="assets/vis_texhub.png" alt="Illustration" width="60%">
 </div>
 
-**(b)** Texture Initialization 
+**(b) Texture Initialization:** AvatarTex first reconstructs facial geometry using open-source face reconstruction models (<a href="https://github.com/csbhr/FFHQ-UV" target="_blank">FFHQ-UV</a> or <a href="https://wukailu.github.io/Unique3D/" target="_blank">Unique3D</a> + <a href="https://github.com/wuhaozhe/pytorch-nicp" target="_blank">Nicp</a>), and then projects the reliable regions of the input image onto the mesh to obtain partial textures. A diffusion model is subsequently employed to complete the missing regions, producing an initialized texture.
 
-**(c)** Texture Correction
+We recommend referring to our CVPR 2026 paper, <a href="https://github.com/XZT24/OMGTex" target="_blank">OMGTex</a>, which introduces a more robust and efficient initialization approach that eliminates the need for the cumbersome geometry reconstruction process.
 
-**(d)** Texture Refinement
+**(c) Texture Correction:** Inference-based initialized textures may exhibit discrepancies from the input image in fine details, making the subsequent optimization process necessary. As discussed in our paper, the texture distribution in diffusion latent space is highly non-uniform, which often leads to issues such as abrupt jumps and optimization collapse during refinement, making the optimization process challenging.
+
+In contrast, optimization in the StyleGAN latent space is not only more computationally efficient, but also significantly more stable. Within the StyleGAN space, the optimization process of AvatarTex is divided into two stages. In the first stage, we reconstruct the initialized texture in the StyleGAN latent space. In the second stage, we further refine texture details by employing a differentiable renderer to compute the loss between the rendered texture and the input image.
+
+**(d) Texture Refinement:** While the optimized texture is semantically well aligned with the input image, it may still exhibit blurring due to the limitations of StyleGAN. To further enhance high-frequency details, we apply a diffusion-based repainting strategy.
+
+Specifically, we perform SDEdit-based image-to-image translation by adding noise to the VAE latent of the optimized texture. During diffusion sampling, UV layout consistency is maintained using LoRA adapters and Canny-edge-guided ControlNet constraints, following our texture synthesis pipeline. This yields the final high-fidelity texture map.
 
 
 ---
