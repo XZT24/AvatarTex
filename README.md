@@ -54,7 +54,11 @@ By integrating these strengths, AvatarTex achieves high-quality topology-aligned
 
 AvatarTex consists of four key components:
 
-**(a)** Dataset Construction 
+**(a)** Dataset Construction: We introduce TexHub, a multi-style facial texture dataset built upon the HiFi3D++ topology. The dataset consists of artist-created base texture assets together with diffusion-model-generated augmented data. TexHub provides strong data support for multi-style face reconstruction tasks. Some visualization results from TexHub are shown below:
+</div>
+<div align="center">
+  <img src="assets/vis_texhub.png" alt="Illustration" width="96%">
+</div>
 
 **(b)** Texture Initialization 
 
