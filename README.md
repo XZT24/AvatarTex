@@ -52,7 +52,7 @@ By integrating these strengths, AvatarTex achieves high-quality topology-aligned
   <img src="assets/framework.png" alt="Framework" width="96%">
 </div>
 
-AvatarTex is a Diffusion-to-GAN-to-Diffusion framework that consists of four key components:
+**AvatarTex** is a **Diffusion-to-GAN-to-Diffusion** framework that consists of four key components:
 
 **(a) Dataset Construction:** We introduce TexHub, a multi-style facial texture dataset built upon the <a href="https://github.com/czh-98/REALY/tree/master/HIFI3D%2B%2B" target="_blank">Hifi3D++</a> topology. The dataset consists of artist-created base texture assets together with diffusion-model-generated augmented data. TexHub provides strong data support for multi-style face reconstruction tasks. Some visualization results from TexHub are shown below:
 </div>
