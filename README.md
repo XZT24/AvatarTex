@@ -100,8 +100,7 @@ After setting up the environment and properly configuring all required paths, ru
 python optimize.py
 ```
 ## Geometry Reconstruction
-In real-world facial reconstruction tasks, optimization-based 3D Morphable Models (
-<a href="https://github.com/csbhr/FFHQ-UV/blob/main/RGB_Fitting/step2_fit_processed_data.py" target="_blank">Example Scripts</a>) are commonly used for facial geometry reconstruction. However, when handling multi-style inputs with highly diverse shapes and exaggerated expressions, 3DMM-based methods often struggle to produce accurate geometry.
+In real-world facial reconstruction tasks, optimization-based 3D Morphable Models (<a href="https://github.com/csbhr/FFHQ-UV/blob/main/RGB_Fitting/step2_fit_processed_data.py" target="_blank">Example Scripts</a>) are commonly used for facial geometry reconstruction. However, when handling multi-style inputs with highly diverse shapes and exaggerated expressions, 3DMM-based methods often struggle to produce accurate geometry.
 
 This limitation not only reduces the expressiveness of the reconstructed mesh, but also negatively affects downstream texture reconstruction, since texture optimization typically relies on projecting the mesh into image space to compute pixel-level reconstruction losses against the input image.
 
