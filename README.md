@@ -99,6 +99,20 @@ After setting up the environment and properly configuring all required paths, ru
 ```bash
 python optimize.py
 ```
+## Geometry Reconstruction
+In real-world facial reconstruction tasks, optimization-based 3D Morphable Models (
+<a href="https://github.com/csbhr/FFHQ-UV/blob/main/RGB_Fitting/step2_fit_processed_data.py" target="_blank">Example Scripts</a>) are commonly used for facial geometry reconstruction. However, when handling multi-style inputs with highly diverse shapes and exaggerated expressions, 3DMM-based methods often struggle to produce accurate geometry.
+
+This limitation not only reduces the expressiveness of the reconstructed mesh, but also negatively affects downstream texture reconstruction, since texture optimization typically relies on projecting the mesh into image space to compute pixel-level reconstruction losses against the input image.
+
+A practical alternative is to leverage recent general-purpose 3D generative models (e.g., <a href="https://wukailu.github.io/Unique3D/" target="_blank">Unique3D</a>) to estimate facial geometry, followed by <a href="https://github.com/wuhaozhe/pytorch-nicp" target="_blank">Nicp</a> for topology alignment. Compared to 3DMM-based reconstruction, this pipeline produces more detailed and accurate geometric structures.
+
+In the `example` directory, `unique3d.obj` and `hifi.obj` correspond to the facial geometry before and after topology alignment, respectively.
+To further obtain high-quality facial geometry suitable for integration into game engines or video rendering pipelines, we recommend using professional tools such as <a href="https://faceform.com/wraporiginal/" target="_blank">Wrap</a> for NICP optimization. This approach typically yields the highest reconstruction quality. The file `warp_example.obj` in the `example` directory demonstrates such a result. Compared to `hifi.obj`, it preserves the same topology while exhibiting more refined geometric details.
+
+Finally, to fundamentally address texture reconstruction failures caused by imperfect geometry, our follow-up work, <a href="https://github.com/XZT24/OMGTex" target="_blank">OMGTex</a>, decouples geometry reconstruction from texture reconstruction, enabling more robust and efficient facial texture synthesis.
+
+
 ---
 
 ## 📬 Contact
