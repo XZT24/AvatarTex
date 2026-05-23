@@ -82,8 +82,8 @@ def resize_image(image_path, size=(512, 512)):
 
 
 # Main optimization logic
-def optimize_latent_z(network_pkl, target_image_path, output_dir, image_size=512, tex_steps=300, view_steps=150):
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+def optimize_latent_z(network_pkl, target_image_path, output_dir, unique3d_topo_obj, hifi_topo_obj, unique3d_tex_path, image_size=512, tex_steps=300, view_steps=80):
+    device = torch.device('cuda')
 
     # Load pre-trained StyleGAN model
     print(f'Loading networks from "{network_pkl}"...')
@@ -196,12 +196,12 @@ def optimize_latent_z(network_pkl, target_image_path, output_dir, image_size=512
 # Run the optimization
 if __name__ == "__main__":
     network_pkl = "./texhub_ckpt/network-snapshot-010000.pkl"  # Replace with actual path
-    init_tex_path = "./data/init_tex.jpg"  # Replace with actual path
+    init_tex_path = "./data/init_tex.png"  # Replace with actual path
     output_dir = "./output"
     unique3d_topo_obj = './data/unique3d.obj'
     hifi_topo_obj = './data/hifi.obj'
     unique3d_tex_path = './data/unique3d_tex.png'
-    optimize_latent_z(network_pkl, init_tex_path, output_dir)
+    optimize_latent_z(network_pkl, init_tex_path, output_dir, unique3d_topo_obj, hifi_topo_obj, unique3d_tex_path)
 
 
 
