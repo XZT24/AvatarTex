@@ -34,6 +34,7 @@
 - **[2025-11]** Our paper was accept by 3DV2026 ! 🥳 
 - **[2025-11]** We release the [paper](https://arxiv.org/abs/2511.06721) for **AvatarTex**.
 - **[2026-05]** Texhub is released!
+- **[2026-05]** Reconstruction code is released.
 
 ---
 
@@ -78,7 +79,7 @@ Specifically, we perform SDEdit-based image-to-image translation by adding noise
 ## 📝 TODO
 - \[x\] Release paper and github page.
 - \[x\] Release the StyleGAN ckpt for Texhub.
-
+- \[x\] Release the example code on how to use Texhub.
 ---
 
 ## 📚 Getting Started
