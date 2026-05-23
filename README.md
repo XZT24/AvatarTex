@@ -85,11 +85,20 @@ Specifically, we perform SDEdit-based image-to-image translation by adding noise
 Thanks for waiting! We have released Texhub, please download from the following link: 
 <a href="https://drive.google.com/file/d/1F9rtvIYg7ZgTrASFyloTjGBHf9qTKSJU/view?usp=drive_link" target="_blank">Texhub</a>. 
 
-Due to copyright and security concerns associated with directly releasing the TexHub texture dataset, we instead release the trained StyleGAN checkpoint. This checkpoint is trained on a  collection of multi-style texture data curated and created by us. Compared with models trained solely on real texture datasets, it demonstrates significantly stronger expressive capability. Moreover, it can be readily integrated into existing advanced face reconstruction frameworks. We will provide an example in future updates to demonstrate how to use it in practice.
+Due to copyright and security concerns associated with directly releasing the TexHub texture dataset, we instead release the trained StyleGAN checkpoint. This checkpoint is trained on a  collection of multi-style texture data curated and created by us. Compared with models trained solely on real texture datasets, it demonstrates significantly stronger expressive capability. Moreover, it can be readily integrated into existing advanced face reconstruction frameworks. We provide an example demonstrating how to use TexHub. You may follow this example to integrate TexHub into other facial reconstruction frameworks, such as <a href="https://github.com/csbhr/FFHQ-UV" target="_blank">FFHQ-UV</a>.
 
 ## Environment Setup
-Please configure the base environment according to the <a href="https://github.com/XZT24/AvatarTex/blob/main/environment.yml" target="_blank">environment.yml</a>, as it provides the required dependencies for using the TexHub checkpoint. In addition, to implement face reconstruction frameworks, <a href="https://github.com/NVlabs/nvdiffrast/tree/main" target="_blank">nvdiffrast</a> is often essential. Please follow the instructions provided in the linked repository for installation and setup.
+Please configure the base environment according to the <a href="https://github.com/XZT24/AvatarTex/blob/main/environment.yml" target="_blank">environment.yml</a>, as it provides the required dependencies for using the TexHub checkpoint. In addition, to implement face reconstruction frameworks, <a href="https://github.com/NVlabs/nvdiffrast/tree/main" target="_blank">nvdiffrast</a> is often essential. Please follow the instructions provided in the linked repository for installation and setup. If you encounter any issues, please refer to the environment setup instructions of <a href="https://github.com/NVlabs/stylegan3" target="_blank">Stylegan3</a>, as our environment configuration is built upon it.
 
+## Reconstruction Example
+
+The `optimize.py` script implements a simple TexHub-based facial texture reconstruction pipeline, corresponding to the Texture Correction stage described above. The `example` directory provides the necessary sample files for reconstruction.
+
+After setting up the environment and properly configuring all required paths, run the reconstruction as follows:
+
+```bash
+python optimize.py
+```
 ---
 
 ## 📬 Contact
