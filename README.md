@@ -20,7 +20,7 @@
 
 <div id="top" align="center">
 
-[![arXiv](https://img.shields.io/badge/arXiv-2512.22939-blue)](https://arxiv.org/abs/2511.06721)
+[![arXiv](https://img.shields.io/badge/arXiv-2511.06721-blue)](https://arxiv.org/abs/2511.06721)
 
 </div>
 
